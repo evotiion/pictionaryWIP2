@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------- This in its own file----------->
+    <style>
+        .solid {
+            border-style: solid;
+        }
+    </style>
+    <title>Join Page</title>
+</head>
+
+<body>
+    <h1>Join Game</h1><!--Have Center-->
+    <hr>
+    <br>
+
+    <div id='avblLobby'>
+        <div id="Lobby1">
+            <label>Lobby Name Here:</label> 4/9 Password: <input id='passwordLobbyNameHere1' type='text'>
+            <input type='button' id='buttonLobbyNameHere1' value='Connect'>
+        </div>
+    </div>
+
+    <input type='button' value='Add Button' id='addButton'>temp
+    <br>
+    <input type='button' value='Remove Button' id='removeButton'>temp
+    <br>
+    <input type="button" id="refreshClicked" value="Refresh">
+    <br>
+    <input type="button" value="Go Back" onclick="window.location.href='/'">
+
+    <script src="js/JoinPage.js"></script>
+</body>
+
+</html>
